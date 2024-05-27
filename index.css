@@ -29,6 +29,22 @@ body {
 	color: #333333;
 }
 
+nav ul{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	font-size: 24px;
+	font-weight: bold;
+	gap: 70px;
+	cursor: pointer;
+}
+nav ul::before{
+	color: #0e4f66;
+}
+nav ul li a {
+	text-decoration: none;
+}
+
 .search-box {
 	display: flex;
 	justify-content: space-between;
@@ -94,7 +110,7 @@ body {
 	color: #333333;
 }
 
-.city span {
+.state {
 	display: inline-block;
 	vertical-align: text-top;
 
@@ -115,23 +131,29 @@ body {
 .temp {
 	font-size: 5em;
 	color: #333333;
+	text-align: center;
 }
 
 .temp sup {
 	font-size: 50%;
 }
 
+
 .weather-image {
-	display: flex;
-	flex-direction: column;
-	border-radius: 40px;
-	width: 70%;
-	padding-left: 5px;
-	margin-bottom: 20px;
-	align-items: center;
+display: flex;align-items: center;
 	justify-content: center;
 }
+.weather-image img{
+	
+	border-radius: 40px;
+	width: 70%;
+	margin-bottom: 20px;
+	
+}
 
+.humidity {
+	padding-bottom: 10px;
+}
 
 .description {
 	font-size: 20px;
