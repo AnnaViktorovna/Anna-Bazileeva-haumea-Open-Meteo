@@ -46,19 +46,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const weatherCode = data.hourly.weather_code[0];
             console.log("Weather Code:", weatherCode);
-            if (weatherCode === 0) {
-              weatherIcon.src = "./img/sunny.jpeg";
-            } else if (weatherCode >= 1 && weatherCode <= 3) {
-              weatherIcon.src = "./img/cloud.jpeg";
-            } else if (weatherCode >= 45 && weatherCode <= 48) {
-              weatherIcon.src = "./img/mist.jpeg";
-            } else if (weatherCode >= 51 && weatherCode <= 67) {
-              weatherIcon.src = "./img/rainy.jpeg";
-            } else if (weatherCode >= 71 && weatherCode <= 77) {
-              weatherIcon.src = "./img/snow.jpeg";
-            } else if (weatherCode >= 80 && weatherCode <= 82) {
-              weatherIcon.src = "./img/shower.jpeg";
-            }
+            
+ if(weatherCode ===0){
+  weatherIcon.src = "./img/sunny.jpeg"
+ } else if (weatherCode >= 1 && weatherCode <= 3) {
+  weatherIcon.src = "./img/cloud.jpeg";
+ } else if (weatherCode >= 45 && weatherCode <= 48) {
+  weatherIcon.src = "./img/mist.jpeg" 
+ }else if (weatherCode >= 51 && weatherCode <= 67) {
+    weatherIcon.src ="./img/rainy.jpeg";
+   } else if (weatherCode >= 71 && weatherCode <= 77) {
+    weatherIcon.src ="./img/snow.jpeg";
+    } else if (weatherCode >= 80 && weatherCode <= 82) {
+      weatherIcon.src = "./img/shower.jpeg";
+  } else {
+    weatherIcon.src = "./img/sunny.jpeg"
+  }
+console.log(weatherIcon.src)
+//            let source  = (weatherCode) =>{
+            
+            
+//               if (weatherCode >= 1 && weatherCode <= 3) {
+//               return "./img/cloud.jpeg";
+//             } if (weatherCode >= 45 && weatherCode <= 48) {
+//               return "./img/mist.jpeg";
+//             }  if (weatherCode >= 51 && weatherCode <= 67) {
+//               return "./img/rainy.jpeg";
+//             }  if (weatherCode >= 71 && weatherCode <= 77) {
+//               return "./img/snow.jpeg";
+//             }  if (weatherCode >= 80 && weatherCode <= 82) {
+//               return "./img/shower.jpeg";
+//             }
+//               return "./img/sunny.jpeg";
+            
+// }
+//  console.log(source(weatherCode))
+// weatherIcon.src = source(weatherCode)
+
+
 
             weather.style.display = "block";
             errorText.style.display = "none";
@@ -69,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
             weather.style.display = "none";
         }
     }
-
+ console.log(weatherIcon.src)
   
     searchButton.addEventListener("click", () => {
         checkWeather(searchInput.value);
