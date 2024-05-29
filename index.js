@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("Weather Code:", weatherCode);
             
  if(weatherCode ===0){
-  weatherIcon.src = "./img/sunny.jpeg"
+  weatherIcon.src = "./img/weather.jpeg"
  } else if (weatherCode >= 1 && weatherCode <= 3) {
   weatherIcon.src = "./img/cloud.jpeg";
  } else if (weatherCode >= 45 && weatherCode <= 48) {

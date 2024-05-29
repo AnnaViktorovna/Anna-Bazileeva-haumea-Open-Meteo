@@ -13,48 +13,22 @@
     </head>
 
 <body>
+    
         <header class="header">
           <nav>
            
               <ul>
-                <li><a href="#" id="weather-link">Weather</a></li>
+                <li><a href="./weather.html" id="weather-link">Weather</a></li>
                 <li><a href="#" id="city-link">City Info</a></li>
             </ul>
             
           </nav>
-            <h1 class="title">Weather and City Info</h1>
-            
-
-            <form class="search-box" onsubmit="return false;">
-                <input id="city-input"
-                    class="input"
-                    type="text"
-                    placeholder="Type your city"
-                />
-                <button id="search-button" class="btn">Show</button>
-            </form>
         </header>
-
-        <div class="card" style="display: none">
-            <h2><span class="city">Sarasota</span>, <span class="state">Florida</span></h2>
-
-            <div class="weather">
-                <div class="temp">30<sup>°C</sup></div>
-                
-            
-              <div class="weather-image"><img src="./img/" alt="Weather Icon"></div>
-          
-
-            
-          </div>
-            <div class="details">
-              <div class="humidity">Humidity: 50%</div>
-              <div class="wind">Wind: 15 km/h</div>
-          </div>
-        </div>
-
+          <p>This project uses <a href="https://open-meteo.com/">open-meteo</a> and provide real-time weather information for city in the world. Users can input the name of a city, and the application will fetch and display the current weather conditions, including temperature, humidity, and wind speed.  </p>
+   
+</main>
         <div class="error" style="display:none; color:red;">City not found</div>
-
+<div class="footer"></div>
         <script src="./index.js"></script>
     </body>
 </html>
