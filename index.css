@@ -55,6 +55,16 @@ p {
     margin: 0 auto;
 }
 
+p a {
+    color: #0e4f66;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+p a:hover {
+    text-decoration: underline;
+}
+
 .search-box {
     display: flex;
     justify-content: space-between;
