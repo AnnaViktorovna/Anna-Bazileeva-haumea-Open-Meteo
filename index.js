@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const weatherIcon = document.querySelector(".weather-image img");
     const weather = document.querySelector(".weather");
     const errorText = document.querySelector(".error");
+    const card = document.querySelector(".card");
 
     async function checkWeather(city) {
         try {
@@ -96,6 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
             errorText.textContent = error.message;
             errorText.style.display = "block";
             weather.style.display = "none";
+            card.style.display = "none"
         }
     }
     console.log(weatherIcon.src);

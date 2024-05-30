@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const weatherIcon = document.querySelector(".weather-image img");
     const weather = document.querySelector(".weather");
     const errorText = document.querySelector(".error");
+    const card = document.querySelector(".card")
 
     async function checkWeather(zipCode) {
         try {
@@ -93,6 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             errorText.style.display = "block";
             weather.style.display = "none";
+            card.style.display = "none"
         }
     }
 
