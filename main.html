@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./city/city.html" id="weather-link">Weather City</a>
+                    </li>
+                    <li>
+                        <a href="./zipcode/zipcode.html" id="city-link"
+                            >Weather zipcode</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <p>
+            This project uses
+            <a href="https://open-meteo.com/">open-meteo</a> API and provide
+            real-time weather information using city's name or zipcode. Users
+            can input the name of a city or zipcode, and the application will
+            fetch and display the current weather conditions, including
+            temperature, humidity, and wind speed and shows icons like sunny,
+            rainy day, snow, shower, mist or cloud. And it has a default
+            picture. When city or zipcode doesn't exist in API, the page show
+            information" not found". I used addition API
+            <a href="http://opencagedata.com/">Opencagedata.com</a> to convert
+            city name to geolocation. Also I used
+            <a href="http://zippopotam.us">Zippopotam.us</a> for converting
+            zipcode to coordinate.
+        </p>
+
+        <div class="footer1"></div>
+        <script>
+            const footer = document.createElement("footer");
+            let today = new Date();
+            let thisYear = today.getFullYear();
+            let copyright = document.createElement("p");
+            copyright.append(`Copyright Anna Bazileeva © ${thisYear}`);
+            footer.appendChild(copyright);
+            document.body.appendChild(footer);
+        </script>
+    </body>
+</html>
