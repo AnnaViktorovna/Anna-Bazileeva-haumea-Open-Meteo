@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector(".state").innerHTML = `${geo.state}`;
 
             document.querySelector(".temp").innerHTML =
-                Math.round(data.hourly.temperature_2m[0]) + "°F";
+                Math.round(data.hourly.temperature_2m[0]) + "°C";
             document.querySelector(".humidity").innerHTML =
                 "Humidity: " + data.hourly.relative_humidity_2m[0] + "%";
             document.querySelector(".wind").innerHTML =
